@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class FullNameApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        // Collecting information
         System.out.println("Please enter your name \n First Name:");
         String firstname = scanner.nextLine().trim();
 
@@ -20,12 +20,14 @@ public class FullNameApplication {
 
         //compute the unknown
         String fullname = "";
+        //adds conditions for missing middle name
         if(middlename.isBlank()){
             fullname= firstname + " " + lastname;
         }
         else{
             fullname = firstname + " " + middlename + " " + lastname;
         }
+        //nested condition
         if (!suffix.isBlank()){
             fullname += "," + suffix;
         }
