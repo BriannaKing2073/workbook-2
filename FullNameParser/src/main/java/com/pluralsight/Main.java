@@ -36,7 +36,7 @@ public class Main {
         System.out.println();
         System.out.println("First Name: " + firstName);
         System.out.println("Middle Name: " + middleName);
-        System.out.println("Last NAme: " + lastName);
+        System.out.println("Last Name: " + lastName);
 
     }
 }
